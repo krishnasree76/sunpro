@@ -252,7 +252,7 @@ function HomePage() {
             <SectionHeading
               eyebrow="About Sunpro"
               title="A healthcare company built on trust, science and care."
-              description="Sunpro is committed to delivering high-quality pharmaceutical solutions across critical therapeutic areas. From respiratory care to specialty medicines, our portfolio is shaped by rigorous research, regulatory discipline and a patient-first philosophy. (Placeholder content — replace with your full company story.)"
+              description="Sunpro is committed to delivering high-quality pharmaceutical solutions across critical therapeutic areas. From respiratory care to specialty medicines, our portfolio is shaped by rigorous research, regulatory discipline and a patient-first philosophy."
             />
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
