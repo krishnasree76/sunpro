@@ -12,6 +12,7 @@ import supromoxclav625Img from "@/assets/supromoxclav-625.png";
 import bactorynCvImg from "@/assets/bactoryn-cv.png";
 import proazoleRDsrImg from "@/assets/proazole-r-dsr.png";
 import dcotpro6Img from "@/assets/dcotpro-6.png";
+import prokofdxImg from "@/assets/prokof-dx.png";
 
 export type Category =
   | "Respiratory Care"
@@ -103,6 +104,7 @@ export const products: Product[] = [
     indications: ["Dry cough", "Allergic cough", "Cold-related cough"],
     benefits: ["Suppresses cough reflex", "Controls allergy symptoms", "Improves sleep"],
     prescription: true,
+    img: prokofdxImg,
   },
   {
     slug: "flutipro-ft",
