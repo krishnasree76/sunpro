@@ -22,6 +22,7 @@ import entImg from "@/assets/ENT&NasalCare.png";
 import antiAllergicImg from "@/assets/Anti-AllergicCare.png";
 import antiInfectiveImg from "@/assets/Anti-Infective.png";
 import gastroImg from "@/assets/GastroCare.png";
+import specialtyImg from "@/assets/dcotpro-6.png";
 import { Eyebrow, SectionHeading } from "@/components/site/SectionHeading";
 import { ProductCard } from "@/components/site/ProductCard";
 import { products } from "@/lib/products";
@@ -71,19 +72,25 @@ const segments = [
     desc: "Acid-suppression and motility therapies for GERD, reflux and dyspepsia.",
     img: gastroImg,
   },
+  {
+    icon: ShieldCheck,
+    title: "Specialty Medicines",
+    desc: "Targeted corticosteroid therapy for inflammatory and immune-mediated conditions.",
+    img: specialtyImg,
+  },
 ];
 
 const features = [
-  { icon: Award, title: "Quality Products", desc: "Manufactured to international quality standards." },
-  { icon: ShieldCheck, title: "Trusted Manufacturing", desc: "GMP-compliant facilities and rigorous QA." },
-  { icon: Users, title: "Experienced Team", desc: "Industry veterans across R&D, QA and operations." },
-  { icon: CheckCircle2, title: "Regulatory Standards", desc: "Aligned with global regulatory frameworks." },
-  { icon: Globe2, title: "Nationwide Distribution", desc: "Dependable supply chain across the country." },
+  { icon: Award, title: "Quality Products", desc: "Manufactured at WHO-GMP certified facilities, released batch by batch against specification." },
+  { icon: ShieldCheck, title: "Audited Manufacturing Partners", desc: "We audit the plants that make our products and hold them to agreed specifications." },
+  { icon: Users, title: "Experienced Team", desc: "A field and management team with deep experience in respiratory and allied care." },
+  { icon: CheckCircle2, title: "Regulatory Compliance", desc: "Licensed under the Drugs and Cosmetics Act, 1940 and its Rules." },
+  { icon: Globe2, title: "Regional Distribution", desc: "A dependable supply chain across Andhra Pradesh and Telangana." },
   { icon: HeartPulse, title: "Customer Satisfaction", desc: "A patient-first approach in every product." },
 ];
 
 function HomePage() {
-  const featured = products.slice(0, 8);
+  const featured = products;
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -173,9 +180,9 @@ function HomePage() {
 
             <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-8">
               {[
-                { k: "15+", v: "Therapeutic Products" },
+                { k: "15", v: "Therapeutic Products" },
                 { k: "6", v: "Segments Covered" },
-                { k: "100%", v: "Quality Commitment" },
+                { k: "100%", v: "Quality-Certified Manufacturing Partners" },
               ].map((s) => (
                 <div key={s.v}>
                   <dt className="font-display text-2xl font-bold text-foreground md:text-3xl">{s.k}</dt>
@@ -256,9 +263,9 @@ function HomePage() {
             />
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
-                "Research-led product portfolio",
-                "GMP-aligned manufacturing",
-                "Pan-India distribution network",
+                "Focused respiratory and allied-care portfolio",
+                "WHO-GMP certified manufacturing partners",
+                "Distribution across Andhra Pradesh and Telangana",
                 "Experienced leadership team",
               ].map((p) => (
                 <li key={p} className="flex items-start gap-2.5 text-sm text-foreground">
@@ -354,7 +361,7 @@ function HomePage() {
               View all products <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
             {featured.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}

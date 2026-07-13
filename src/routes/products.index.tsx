@@ -64,7 +64,9 @@ function ProductsPage() {
                 <div key={cat} className="mb-16">
                   <div className="mb-8 flex items-end justify-between">
                     <SectionHeading title={cat} />
-                    <span className="text-sm text-muted-foreground">{items.length} products</span>
+                    <span className="text-sm text-muted-foreground">
+                      {items.length} {items.length === 1 ? "product" : "products"}
+                    </span>
                   </div>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {items.map((p) => (

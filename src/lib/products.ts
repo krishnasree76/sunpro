@@ -231,7 +231,7 @@ export const products: Product[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "+91 7416705147"; // placeholder, update later
+export const WHATSAPP_NUMBER = "917416705147";
 
 export function whatsappLink(productName: string) {
   const msg = `Hello,\n\nI would like to enquire about:\n\nProduct:\n${productName}\n\nPlease provide more information.\n\nThank you.`;

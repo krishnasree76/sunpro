@@ -227,7 +227,7 @@ function ContactPage() {
             className="rounded-[2rem] border border-border bg-card p-8 shadow-[var(--shadow-soft)] lg:col-span-3"
           >
             <h2 className="text-2xl font-bold text-foreground">Send us a message</h2>
-            <p className="mt-1.5 text-sm text-muted-foreground">We will instantly receive your query via WhatsApp.</p>
+            <p className="mt-1.5 text-sm text-muted-foreground">Your enquiry will open in WhatsApp so you can send it to our team directly.</p>
 
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
               <Field label="Full Name" name="name" placeholder="Your name" required />
@@ -244,6 +244,19 @@ function ContactPage() {
                 required
                 className="mt-2 w-full rounded-2xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary"
               />
+            </div>
+            
+            <div className="mt-5 flex items-start gap-3">
+              <input 
+                type="checkbox" 
+                id="consent" 
+                name="consent" 
+                required 
+                className="mt-1 cursor-pointer"
+              />
+              <label htmlFor="consent" className="text-xs text-muted-foreground cursor-pointer">
+                I consent to Sunpro Healthcare contacting me regarding this enquiry. I have read the Privacy Policy.
+              </label>
             </div>
             <button
               type="submit"

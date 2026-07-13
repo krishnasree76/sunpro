@@ -131,9 +131,20 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-border">
-        <div className="container-page flex flex-col items-center justify-between gap-3 py-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Sunpro Healthcare. All rights reserved.</p>
-          <p>Your Health, Our Promise.</p>
+        <div className="container-page flex flex-col gap-4 py-8 text-xs text-muted-foreground">
+          <p className="leading-relaxed">
+            Sunpro Healthcare Private Limited. Product information on this website is intended for healthcare professionals in India. It is not medical advice and is not an offer to sell medicines to the public. Prescription medicines must be dispensed only against a valid prescription from a registered medical practitioner.
+          </p>
+          <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
+            <div className="flex items-center gap-4">
+              <p>© {new Date().getFullYear()} Sunpro Healthcare. All rights reserved.</p>
+              <div className="flex items-center gap-4 border-l border-border pl-4">
+                <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+                <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
+              </div>
+            </div>
+            <p>Your Health, Our Promise.</p>
+          </div>
         </div>
       </div>
     </footer>

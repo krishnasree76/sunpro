@@ -15,12 +15,12 @@ export const Route = createFileRoute("/services")({
 });
 
 const services = [
-  { icon: Beaker, title: "Pharmaceutical Manufacturing", desc: "Placeholder — describe your contract and in-house manufacturing capabilities." },
-  { icon: ShieldCheck, title: "Quality Assurance", desc: "Placeholder — share your QA workflow, certifications and testing capabilities." },
-  { icon: Boxes, title: "Product Portfolio Expansion", desc: "Placeholder — explain how partners can expand portfolios with Sunpro." },
-  { icon: Truck, title: "Nationwide Distribution", desc: "Placeholder — describe your supply chain and reach." },
-  { icon: Users, title: "Medical Affairs", desc: "Placeholder — describe scientific support for HCPs and partners." },
-  { icon: Headphones, title: "Customer Support", desc: "Placeholder — describe responsive enquiry and after-sales support." },
+  { icon: Beaker, title: "Contract Manufacturing Partnerships", desc: "Our products are manufactured at WHO-GMP certified partner facilities under agreed specifications, with defined release criteria for every batch." },
+  { icon: ShieldCheck, title: "Quality Assurance", desc: "Every batch is reviewed against its certificate of analysis before release. We audit our manufacturing partners and maintain full batch traceability from plant to prescriber." },
+  { icon: Boxes, title: "In-Licensing and Portfolio Partnerships", desc: "We in-license and market brands for manufacturers seeking coverage in Andhra Pradesh and Telangana. If you have a product and need a route to market, talk to us." },
+  { icon: Truck, title: "Regional Distribution", desc: "A stockist and distributor network across Andhra Pradesh and Telangana, supported by a field team calling on prescribers and pharmacies directly." },
+  { icon: Users, title: "Scientific and Product Support", desc: "Prescribing information, product literature and clinical queries handled directly by our team. We do not leave a doctor waiting for an answer." },
+  { icon: Headphones, title: "Customer Support", desc: "Order enquiries, supply issues and complaints go to a named person, not a ticket queue. Reachable on phone and WhatsApp during business hours." },
 ];
 
 function ServicesPage() {
@@ -33,8 +33,7 @@ function ServicesPage() {
             End-to-end healthcare services
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-            From manufacturing to distribution and medical affairs — Sunpro supports
-            partners across the value chain. (Placeholder content — replace later.)
+            Sunpro works with manufacturers who have good products and no route to market, and with prescribers who want a supplier they can rely on. We sit between the two — sourcing, marketing and distributing quality medicines across our therapy areas.
           </p>
         </div>
       </section>

@@ -70,6 +70,13 @@ function ProductDetail() {
                 )}
               </div>
 
+              {product.prescription && (
+                <div className="mt-6 rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive">
+                  <strong className="block font-semibold">Important Notice:</strong>
+                  This information is intended for registered medical practitioners and healthcare professionals only. The products listed are prescription medicines and must not be used except under medical supervision.
+                </div>
+              )}
+
               <h1 className="mt-5 text-4xl font-bold leading-tight text-foreground md:text-5xl">
                 {product.name}
               </h1>
@@ -83,10 +90,10 @@ function ProductDetail() {
                 rel="noopener noreferrer"
                 className="group mt-9 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-4 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-colors hover:bg-primary-dark"
               >
-                <MessageCircle className="h-4 w-4" /> Add to Cart / Enquire on WhatsApp
+                <MessageCircle className="h-4 w-4" /> Enquire on WhatsApp
               </a>
               <p className="mt-3 text-xs text-muted-foreground">
-                Enquiries are routed directly to our team via WhatsApp. No online payment.
+                Enquiries are routed directly to our team via WhatsApp. Sunpro does not sell medicines online.
               </p>
 
               {product.pack && (
