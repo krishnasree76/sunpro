@@ -76,7 +76,7 @@
 //   );
 // }
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone,Heart } from "lucide-react";
 import logoImg from "../../assets/logo.png";
 
 export function Footer() {
@@ -138,12 +138,31 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
             <div className="flex items-center gap-4">
               <p>© {new Date().getFullYear()} Sunpro Healthcare. All rights reserved.</p>
-              <div className="flex items-center gap-4 border-l border-border pl-4">
+              {/* <div className="flex items-center gap-4 border-l border-border pl-4">
                 <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
                 <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
-              </div>
+              </div> */}
             </div>
             <p>Your Health, Our Promise.</p>
+          </div>
+          Another note that please put Made with love by staffArc in footer for all the upcoming websites going forward unless client asks to remove it:
+
+Sample code for the same:
+<div className="flex justify-center items-center gap-1">
+            Made with <Heart className="inline h-4 w-4 text-red-500 mx-1" /> by
+            <a
+              href="https://staffarc.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-orange-600 hover:underline"
+            >
+              <img
+                src="https://www.staffarc.in/images/Staffarc-logo.png"
+                alt="StaffArc logo"
+                className="h-5 w-5 object-contain"
+              />
+              StaffArc
+            </a>
           </div>
         </div>
       </div>
